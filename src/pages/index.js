@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import App from 'containers/App'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,9 +17,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className={styles.main}>
-        <h1>Hello</h1>
-      </main>
+      <App />
     </div>
   )
 }
