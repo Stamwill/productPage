@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Hamburger from 'components/Hamburger'
-import { logo } from 'api/mock'
+import { logo, shoppingCartLogo, userAvatar } from 'api/mock'
 import classes from './AppNav.module.css'
 
 const AppNav = (props) => {
@@ -11,6 +11,7 @@ const AppNav = (props) => {
       <div className={classes.companyLogo}>
         <img src={logo} alt="company logo" />
       </div>
+
       <ul className={classes.navBar}>
         {navList.map((item, idx) => (
           <li className={classes.heading} key={idx}>
@@ -18,6 +19,11 @@ const AppNav = (props) => {
           </li>
         ))}
       </ul>
+
+      <div className={classes.userBox}>
+        <img className={classes.img} src={shoppingCartLogo} alt="shopping cart" />
+        <img className={classes.img} src={userAvatar} alt="user avatar" />
+      </div>
     </section>
   )
 }

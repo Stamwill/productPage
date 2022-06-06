@@ -1,11 +1,27 @@
 .root {
+  padding: 25px 0;
   display: flex;
+  align-items: center;
+}
+
+.companyLogo {
+  margin-left: 10px;
 }
 
 .navBar {
   display: none;
   list-style-type: none;
   justify-content: space-evenly;
+}
+
+
+.userBox {
+  margin-left: auto;
+}
+
+.img {
+  padding-left: 15px;
+  width: 40px;
 }
 
 @media screen and (min-width: 900px) {
