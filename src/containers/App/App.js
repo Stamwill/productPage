@@ -1,7 +1,8 @@
 import * as React from 'react'
-import { navList } from 'api/mock'
-import classes from './App.module.css'
+import { navList, product, productInfo, productPrice } from 'api/mock'
 import AppNav from './partials/AppNav'
+import Product from 'blocks/Product'
+import classes from './App.module.css'
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
         <AppNav navList={navList} />
       </header>
       <main className={classes.main}>
-        <h1>Main</h1>
+        <Product product={product} productInfo={productInfo} productPrice={productPrice} />
       </main>
       <footer>Footer</footer>
     </div>
