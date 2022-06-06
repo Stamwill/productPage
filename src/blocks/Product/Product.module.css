@@ -1,7 +1,11 @@
 .imgContainer {
-  
+
 }
 
 .productImg {
   width: 100%;
+}
+
+.test {
+  padding-left: 0;
 }
