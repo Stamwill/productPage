@@ -1,4 +1,5 @@
 import * as React from 'react'
+import propTypes from 'prop-types'
 import classes from './ProductDescription.module.css'
 
 const ProductDescription = (props) => {
@@ -11,6 +12,10 @@ const ProductDescription = (props) => {
       <p className={classes.text}>{productInfo.text}</p>
     </section>
   )
+}
+
+ProductDescription.propTypes = {
+  productInfo: propTypes.object,
 }
 
 export default ProductDescription
