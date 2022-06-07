@@ -1,3 +1,7 @@
+.root {
+  padding-bottom: 20px;
+}
+
 .imgContainer {
 
 }
@@ -6,6 +10,6 @@
   width: 100%;
 }
 
-.test {
-  padding-left: 0;
+.addCartContainer {
+  padding: 0 20px;
 }
