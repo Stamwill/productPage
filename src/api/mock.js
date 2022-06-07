@@ -2,6 +2,8 @@ export const logo = ['/images/logo.svg']
 export const hamburger = ['/images/iconMenu.svg']
 export const shoppingCartLogo = ['/images/iconCart.svg']
 export const userAvatar = ['/images/imageAvatar.png']
+export const iconPlus = ['./images/iconPlus.svg']
+export const iconMinus = ['./images/iconMinus.svg']
 
 export const navList = [
   {
@@ -46,6 +48,10 @@ export const productInfo = {
   text: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
 }
 
-export const productPrice = {
-  price: '$125.00',
-}
+export const productPrice = [
+  {
+    price: '$125.00',
+    oldPrice: '$250.00',
+    sale: '50%',
+  },
+]
