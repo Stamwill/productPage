@@ -1,0 +1,28 @@
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sale {
+  margin-left: 15px;
+  color: var(--main-orange);
+  background-color: var(--secondary-orange);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.priceSubContainer {
+  display: flex;
+  align-items: center;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: var(--dark-gray-blue);
+}

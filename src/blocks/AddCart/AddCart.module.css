@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--main-orange);
+  color: var(--main-white);
+}
+
+.cartImg {
+  margin-right: 10px;
+}
