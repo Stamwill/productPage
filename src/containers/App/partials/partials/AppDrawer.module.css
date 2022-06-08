@@ -1,0 +1,44 @@
+.root {
+  position: fixed;
+  height: 0%;
+  width: 60%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: hidden;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.menuIsOpen {
+  height: 100%;
+  opacity: 0.97;
+}
+
+.iconClose {
+  position: absolute;
+  left: 18px;
+  top: 30px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  z-index: 2;
+  position: relative;
+  top: 15%;
+  transform: translateY(-15%);
+}
+
+.navLink {
+  cursor: pointer;
+  margin-top: 25px;
+  font-size:25px;
+  transition: 0.4s ease-out;
+}
+
+.navLink:hover {
+  color: white;
+  background-position: left;
+}
