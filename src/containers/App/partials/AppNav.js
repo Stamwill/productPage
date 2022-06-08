@@ -1,13 +1,14 @@
 import * as React from 'react'
 import Hamburger from 'components/Hamburger'
 import { logo, shoppingCartLogo, userAvatar } from 'api/mock'
+import propTypes from 'prop-types'
 import classes from './AppNav.module.css'
 
 const AppNav = (props) => {
-  const { navList } = props
+  const { navList, toggleMenu, open } = props
   return (
     <section className={classes.root}>
-      <Hamburger />
+      <Hamburger toggleMenu={toggleMenu} open={open} />
       <div className={classes.companyLogo}>
         <img src={logo} alt="company logo" />
       </div>
@@ -26,6 +27,12 @@ const AppNav = (props) => {
       </div>
     </section>
   )
+}
+
+AppNav.PropTypes = {
+  navList: propTypes.array,
+  toggleMenu: propTypes.func,
+  open: propTypes.bool,
 }
 
 export default AppNav
