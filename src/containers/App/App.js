@@ -3,8 +3,16 @@ import { navList, product, productInfo, productPrice } from 'api/mock'
 import AppNav from './partials/AppNav'
 import Product from 'blocks/Product'
 import classes from './App.module.css'
+import AppAppBar from 'containers/AppAppBar/AppAppBar'
+import AppDrawer from './partials/partials/AppDrawer'
 
 const App = () => {
+  const [menuIsOpen, setMenuOpen] = React.useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState)
+  }
+
   const [addedItems, setAddedItems] = React.useState(0)
 
   const handleAdd = () => {
@@ -19,7 +27,10 @@ const App = () => {
   return (
     <div className={classes.root}>
       <header>
-        <AppNav navList={navList} />
+        <AppAppBar>
+          <AppNav navList={navList} toggleMenu={toggleMenu} open={menuIsOpen} />
+          <AppDrawer toggleMenu={toggleMenu} open={menuIsOpen} />
+        </AppAppBar>
       </header>
       <main className={classes.main}>
         <Product
