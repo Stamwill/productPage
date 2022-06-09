@@ -12,7 +12,7 @@ const Product = (props) => {
   return (
     <section className={classes.root}>
       <div className={classes.imgContainer}>
-        <Slider>
+        <Slider product={product}>
           {product.map((item, idx) => (
             <img className={classes.productImg} src={item.img} alt="test" key={idx} />
           ))}

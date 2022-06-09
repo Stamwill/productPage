@@ -17,22 +17,32 @@
 @media screen and (min-width: 900px) {
   .root {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 40px 200px 0px 200px;
   }
 
   .imgContainer {
-    width: 45%;
+    width: 40%;
   }
 
   .productInfoContainer {
-    width: 30vw;
+    width: 35vw;
   }
 
   .addCartContainer {
     display: flex;
     justify-content: center;
   }
+}
 
+@media screen and (min-width: 1500px) {
+  .root {
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 150px;
+  }
+
+  .productInfoContainer {
+    width: 30vw;
+  }
 }
