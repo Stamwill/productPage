@@ -6,23 +6,44 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Slider.module.css'
 
 const Slider = (props) => {
-  const { children } = props
+  const { children, product } = props
   return (
-    <Carousel
-      className={classes.root}
-      showIndicators={false}
-      showArrows={false}
-      showThumbs={false}
-      showStatus={false}
-      thumbWidth={60}
-      animationHandler="fade"
-      swipeable={false}
-      stopOnHover={true}
-      autoPlay={true}
-      infiniteLoop={true}
-    >
-      {children}
-    </Carousel>
+    <div>
+      <div className={classes.vOne}>
+        <Carousel
+          className={classes.root}
+          showIndicators={false}
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+          thumbWidth={60}
+          animationHandler="fade"
+          swipeable={false}
+          stopOnHover={true}
+          autoPlay={true}
+          infiniteLoop={true}
+        >
+          {children}
+        </Carousel>
+      </div>
+      <div className={classes.vTwo}>
+        <Carousel
+          className={classes.root}
+          showIndicators={false}
+          showArrows={false}
+          showThumbs={true}
+          showStatus={false}
+          thumbWidth={60}
+          animationHandler="fade"
+          swipeable={false}
+          stopOnHover={true}
+          autoPlay={true}
+          infiniteLoop={true}
+        >
+          {children}
+        </Carousel>
+      </div>
+    </div>
   )
 }
 
