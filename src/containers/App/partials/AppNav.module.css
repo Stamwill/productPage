@@ -25,7 +25,26 @@
 }
 
 @media screen and (min-width: 900px) {
+  .root {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--dark-gray-blue);
+  }
+
   .navBar {
     display: flex;
+    justify-content: space-evenly;
+    width: 35em;
+  }
+
+  .userBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .userAvatar {
+    width: 60px;
   }
 }

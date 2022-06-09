@@ -1,7 +1,8 @@
 import * as React from 'react'
 import Hamburger from 'components/Hamburger'
 import { logo, shoppingCartLogo, userAvatar } from 'api/mock'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
+import classnames from 'clsx'
 import classes from './AppNav.module.css'
 
 const AppNav = (props) => {
@@ -13,26 +14,30 @@ const AppNav = (props) => {
         <img src={logo} alt="company logo" />
       </div>
 
-      <ul className={classes.navBar}>
+      <div className={classes.navBar}>
         {navList.map((item, idx) => (
-          <li className={classes.heading} key={idx}>
+          <a className={classes.heading} key={idx}>
             {item.heading}
-          </li>
+          </a>
         ))}
-      </ul>
+      </div>
 
       <div className={classes.userBox}>
         <img className={classes.img} src={shoppingCartLogo} alt="shopping cart" />
-        <img className={classes.img} src={userAvatar} alt="user avatar" />
+        <img
+          className={classnames(classes.img, classes.userAvatar)}
+          src={userAvatar}
+          alt="user avatar"
+        />
       </div>
     </section>
   )
 }
 
-AppNav.PropTypes = {
-  navList: propTypes.array,
-  toggleMenu: propTypes.func,
-  open: propTypes.bool,
+AppNav.propTypes = {
+  navList: PropTypes.array,
+  toggleMenu: PropTypes.func,
+  open: PropTypes.bool,
 }
 
 export default AppNav
