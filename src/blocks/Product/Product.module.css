@@ -17,12 +17,12 @@
 @media screen and (min-width: 900px) {
   .root {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 200px 0px 200px;
+    justify-content: space-around;
+    margin: 30px 200px;
   }
 
   .imgContainer {
-    width: 40%;
+    width: 35%;
   }
 
   .productInfoContainer {
