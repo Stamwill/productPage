@@ -23,7 +23,11 @@ const AppNav = (props) => {
       </div>
 
       <div className={classes.userBox}>
-        <img className={classes.img} src={shoppingCartLogo} alt="shopping cart" />
+        <img
+          className={classnames(classes.img, classes.shoppingCart)}
+          src={shoppingCartLogo}
+          alt="shopping cart"
+        />
         <img
           className={classnames(classes.img, classes.userAvatar)}
           src={userAvatar}
