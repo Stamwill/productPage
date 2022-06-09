@@ -18,3 +18,9 @@
 .text {
   color: var(--dark-gray-blue);
 }
+
+@media screen and (min-width: 900px) {
+  .root {
+    padding: 0;
+  }
+}
