@@ -21,3 +21,11 @@
   width: 20px;
   height: 20px;
 }
+
+@media screen and (min-width: 900px) {
+  .root {
+    width: 60%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
