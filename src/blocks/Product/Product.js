@@ -19,12 +19,17 @@ const Product = (props) => {
         </Slider>
       </div>
 
-      <ProductDescription productInfo={productInfo} />
-
-      <div className={classes.addCartContainer}>
+      <div className={classes.productInfoContainer}>
+        <ProductDescription productInfo={productInfo} />
         <ProductPrice productPrice={productPrice} />
-        <AddProduct handleAdd={handleAdd} handleSubtract={handleSubtract} addedItems={addedItems} />
-        <AddCart />
+        <div className={classes.addCartContainer}>
+          <AddProduct
+            handleAdd={handleAdd}
+            handleSubtract={handleSubtract}
+            addedItems={addedItems}
+          />
+          <AddCart />
+        </div>
       </div>
     </section>
   )

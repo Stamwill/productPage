@@ -3,13 +3,36 @@
 }
 
 .imgContainer {
-
+  width: 100%;
 }
 
 .productImg {
   width: 100%;
 }
 
-.addCartContainer {
+.productInfoContainer {
   padding: 0 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 200px 0px 200px;
+  }
+
+  .imgContainer {
+    width: 45%;
+  }
+
+  .productInfoContainer {
+    width: 30vw;
+  }
+
+  .addCartContainer {
+    display: flex;
+    justify-content: center;
+  }
+
 }
