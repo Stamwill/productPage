@@ -7,19 +7,13 @@
   border-radius: 15px;
 }
 
-.subtract {
-  width: 20px;
-  height: 5px;
+.subtract:hover, .add:hover {
+  cursor: pointer;
 }
 
 .items {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-}
-
-.add {
-  width: 20px;
-  height: 20px;
 }
 
 @media screen and (min-width: 900px) {
