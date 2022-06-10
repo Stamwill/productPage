@@ -14,6 +14,7 @@ const App = () => {
   }
 
   const [addedItems, setAddedItems] = React.useState(0)
+  const [basketItems, setBasketItems] = React.useState(0)
 
   const handleAdd = () => {
     console.log('add')
@@ -23,12 +24,21 @@ const App = () => {
     console.log('subtract')
     setAddedItems(addedItems + -1)
   }
+  const handleShoppingCart = () => {
+    setBasketItems(addedItems)
+    console.log(`You have added ${addedItems} to the basket`)
+  }
 
   return (
     <div className={classes.root}>
       <header>
         <AppAppBar>
-          <AppNav navList={navList} toggleMenu={toggleMenu} open={menuIsOpen} />
+          <AppNav
+            navList={navList}
+            toggleMenu={toggleMenu}
+            open={menuIsOpen}
+            basketItems={basketItems}
+          />
           <AppDrawer toggleMenu={toggleMenu} open={menuIsOpen} />
         </AppAppBar>
       </header>
@@ -40,6 +50,7 @@ const App = () => {
           handleAdd={handleAdd}
           handleSubtract={handleSubtract}
           addedItems={addedItems}
+          handleShoppingCart={handleShoppingCart}
         />
       </main>
     </div>
