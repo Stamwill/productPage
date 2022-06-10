@@ -8,7 +8,15 @@ import PropTypes from 'prop-types'
 import classes from './Product.module.css'
 
 const Product = (props) => {
-  const { product, productInfo, productPrice, handleAdd, handleSubtract, addedItems } = props
+  const {
+    product,
+    productInfo,
+    productPrice,
+    handleAdd,
+    handleSubtract,
+    addedItems,
+    handleShoppingCart,
+  } = props
   return (
     <section className={classes.root}>
       <div className={classes.imgContainer}>
@@ -28,7 +36,7 @@ const Product = (props) => {
             handleSubtract={handleSubtract}
             addedItems={addedItems}
           />
-          <AddCart />
+          <AddCart handleShoppingCart={handleShoppingCart} />
         </div>
       </div>
     </section>
