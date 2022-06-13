@@ -5,6 +5,7 @@ export const userAvatar = ['/images/imageAvatar.png']
 export const iconPlus = ['./images/iconPlus.svg']
 export const iconMinus = ['./images/iconMinus.svg']
 export const iconClose = ['./images/iconClose.svg']
+export const iconDelete = ['./images/iconDelete.svg']
 
 export const navList = [
   {
