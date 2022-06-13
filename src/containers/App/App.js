@@ -8,6 +8,7 @@ import AppDrawer from './partials/partials/AppDrawer'
 
 const App = () => {
   const [menuIsOpen, setMenuOpen] = React.useState(false)
+  const [basketIsOpen, setBasketOpen] = React.useState(false)
 
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState)
@@ -28,6 +29,10 @@ const App = () => {
     setBasketItems(addedItems)
     console.log(`You have added ${addedItems} to the basket`)
   }
+  const toggleBasket = () => {
+    setBasketOpen((prevState) => !prevState)
+    console.log('basket is clicked')
+  }
 
   return (
     <div className={classes.root}>
@@ -38,6 +43,8 @@ const App = () => {
             toggleMenu={toggleMenu}
             open={menuIsOpen}
             basketItems={basketItems}
+            toggleBasket={toggleBasket}
+            basketIsOpen={basketIsOpen}
           />
           <AppDrawer toggleMenu={toggleMenu} open={menuIsOpen} />
         </AppAppBar>
