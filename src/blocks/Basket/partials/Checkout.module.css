@@ -1,0 +1,15 @@
+
+.checkout {
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--main-orange);
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--main-orange);
+  color: var(--main-white);
+}

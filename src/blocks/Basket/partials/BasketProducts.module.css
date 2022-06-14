@@ -1,0 +1,25 @@
+.headingContainer {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dark-gray-blue);
+}
+
+.heading {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.productContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  margin: 0;
+}
