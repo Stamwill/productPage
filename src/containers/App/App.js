@@ -18,20 +18,17 @@ const App = () => {
   const [basketItems, setBasketItems] = React.useState(0)
 
   const handleAdd = () => {
-    console.log('add')
     setAddedItems((addedItems += 1))
   }
   const handleSubtract = () => {
-    console.log('subtract')
     setAddedItems(addedItems + -1)
   }
   const handleShoppingCart = () => {
     setBasketItems(addedItems)
-    console.log(`You have added ${addedItems} to the basket`)
   }
+
   const toggleBasket = () => {
     setBasketOpen((prevState) => !prevState)
-    console.log('basket is clicked')
   }
 
   return (
