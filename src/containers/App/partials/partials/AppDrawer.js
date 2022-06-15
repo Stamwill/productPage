@@ -53,7 +53,6 @@ AppDrawer.propTypes = {
   className: PropTypes.string,
   open: PropTypes.bool,
   toggleMenu: PropTypes.func,
-  navigations: PropTypes.array,
 }
 
 export default AppDrawer
