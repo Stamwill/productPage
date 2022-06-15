@@ -49,6 +49,7 @@ const Slider = (props) => {
 
 Slider.propTypes = {
   children: PropTypes.node,
+  product: PropTypes.array,
 }
 
 export default Slider
