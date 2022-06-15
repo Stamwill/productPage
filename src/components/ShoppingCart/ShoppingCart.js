@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import classes from './ShoppingCart.module.css'
 
 const ShoppingCart = (props) => {
-  const { handleShoppingCart, basketItems, toggleBasket } = props
+  const { basketItems, toggleBasket } = props
   return (
     <div className={classes.root} onClick={toggleBasket}>
       <img src={shoppingCartLogo} className={classes.cartImg} alt="Shopping Cart" />
@@ -14,7 +14,8 @@ const ShoppingCart = (props) => {
 }
 
 ShoppingCart.propTypes = {
-  handleShoppingCart: PropTypes.func,
+  basketItems: PropTypes.number,
+  toggleBasket: PropTypes.func,
 }
 
 export default ShoppingCart
