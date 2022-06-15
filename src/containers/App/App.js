@@ -22,9 +22,14 @@ const App = () => {
   }
   const handleSubtract = () => {
     setAddedItems(addedItems + -1)
+    addedItems < 1 ? setAddedItems(0) : null
   }
   const handleShoppingCart = () => {
     setBasketItems(addedItems)
+  }
+
+  const handleDelete = () => {
+    setBasketItems(0)
   }
 
   const toggleBasket = () => {
@@ -42,6 +47,7 @@ const App = () => {
             basketItems={basketItems}
             toggleBasket={toggleBasket}
             basketIsOpen={basketIsOpen}
+            handleDelete={handleDelete}
           />
           <AppDrawer toggleMenu={toggleMenu} open={menuIsOpen} />
         </AppAppBar>
