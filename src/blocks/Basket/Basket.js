@@ -37,7 +37,7 @@ const Basket = (props) => {
         ) : (
           <p className={classes.emptyBasket}>Basket is empty</p>
         )}
-        <Checkout />
+        <Checkout toggleBasket={toggleBasket} />
       </div>
     </section>
   )
