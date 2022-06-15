@@ -1,7 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { iconPlus, iconMinus } from 'api/mock'
-import classnames from 'clsx'
 import classes from './AddProduct.module.css'
 
 const AddProduct = (props) => {
