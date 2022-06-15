@@ -26,10 +26,6 @@
   width: 40px;
 }
 
-.shoppingCart {
-
-}
-
 @media screen and (min-width: 900px) {
   .root {
     display: flex;
@@ -56,7 +52,7 @@
   }
 
   .heading {
-    padding-bottom: 32px;
+    padding-bottom: 31px;
     border-bottom: 4px solid transparent;
     color: var(--dark-gray-blue);
   }

@@ -8,7 +8,7 @@ import classnames from 'clsx'
 import classes from './AppNav.module.css'
 
 const AppNav = (props) => {
-  const { navList, toggleMenu, open, basketItems, toggleBasket, basketIsOpen } = props
+  const { navList, toggleMenu, open, basketItems, toggleBasket, basketIsOpen, handleDelete } = props
   return (
     <section className={classes.root}>
       <Hamburger toggleMenu={toggleMenu} open={open} />
@@ -31,6 +31,7 @@ const AppNav = (props) => {
             toggleBasket={toggleBasket}
             basketIsOpen={basketIsOpen}
             basketItems={basketItems}
+            handleDelete={handleDelete}
           />
         </div>
         <img
@@ -48,6 +49,7 @@ AppNav.propTypes = {
   toggleMenu: PropTypes.func,
   open: PropTypes.bool,
   basketItems: PropTypes.number,
+  handleDelete: PropTypes.func,
 }
 
 export default AppNav
