@@ -3,6 +3,7 @@ import classes from './BasketProducts.module.css'
 
 const BasketProducts = (props) => {
   const { basketItems, productPrice, productTotal } = props
+
   return (
     <div className={classes.root}>
       <div className={classes.productContainer}>
