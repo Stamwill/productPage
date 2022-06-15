@@ -52,7 +52,7 @@ export const productInfo = {
 
 export const productPrice = [
   {
-    price: '$125.00',
+    price: '125.00',
     oldPrice: '$250.00',
     sale: '50%',
   },
