@@ -10,9 +10,11 @@ import ProductImg from './partials/ProductImg'
 
 const productPriceOne = productPrice[0].price
 const Basket = (props) => {
-  const { toggleBasket, basketIsOpen, basketItems } = props
+  const { toggleBasket, basketIsOpen, basketItems, handleDelete } = props
+
   const productTotal = () => {
-    return basketItems * Number.productPriceOne
+    let multiply = basketItems * Number(productPriceOne)
+    return multiply.toFixed(2).toString()
   }
 
   return (
@@ -30,12 +32,11 @@ const Basket = (props) => {
               productPrice={productPrice}
               productTotal={productTotal}
             />
-            <DeleteProduct />
+            <DeleteProduct handleDelete={handleDelete} />
           </div>
         ) : (
-          <p>Basket is empty</p>
+          <p className={classes.emptyBasket}>Basket is empty</p>
         )}
-
         <Checkout />
       </div>
     </section>
@@ -46,6 +47,7 @@ Basket.propTypes = {
   toggleBasket: PropTypes.func,
   basketIsOpen: PropTypes.bool,
   basketItems: PropTypes.number,
+  handleDelete: PropTypes.func,
 }
 
 export default Basket
