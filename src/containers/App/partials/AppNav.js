@@ -49,6 +49,8 @@ AppNav.propTypes = {
   toggleMenu: PropTypes.func,
   open: PropTypes.bool,
   basketItems: PropTypes.number,
+  toggleBasket: PropTypes.func,
+  basketIsOpen: PropTypes.bool,
   handleDelete: PropTypes.func,
 }
 
