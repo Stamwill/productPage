@@ -36,6 +36,9 @@
   justify-content: space-evenly;
 }
 
+.emptyBasket {
+  text-align: center;
+}
 
 @media screen and (min-width: 900px) {
   .root {
