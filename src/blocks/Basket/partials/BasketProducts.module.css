@@ -13,13 +13,23 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px;
+  color: var(--dark-gray-blue);
 }
 
 .price {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .product {
   margin: 0;
+}
+
+.basketItems {
+  padding: 0 8px;
+}
+
+.totalPrice {
+  color: var(--main-black);
+  font-weight: 700;
 }
