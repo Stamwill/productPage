@@ -48,7 +48,9 @@ Product.propTypes = {
   productInfo: PropTypes.object,
   productPrice: PropTypes.array,
   handleAdd: PropTypes.func,
+  handleSubtract: PropTypes.func,
   addedItems: PropTypes.number,
+  handleShoppingCart: PropTypes.func,
 }
 
 export default Product
