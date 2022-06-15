@@ -9,7 +9,7 @@ const ProductPrice = (props) => {
       {productPrice.map((price, idx) => (
         <div className={classes.priceContainer} key={idx}>
           <div className={classes.priceSubContainer}>
-            <p className={classes.price}>{price.price}</p>
+            <p className={classes.price}>${price.price}</p>
             <p className={classes.sale}>{price.sale}</p>
           </div>
           <p className={classes.oldPrice}>{price.oldPrice}</p>
