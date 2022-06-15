@@ -13,3 +13,7 @@
   background-color: var(--main-orange);
   color: var(--main-white);
 }
+
+.btn:hover {
+  cursor: pointer;
+}
