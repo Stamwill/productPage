@@ -12,6 +12,7 @@
   border: none;
   background-color: var(--main-orange);
   color: var(--main-white);
+  font-weight: bold;
 }
 
 .btn:hover {
